@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms and Input Fields</title>
+</head>
+<body>
+
+  <form action="process.php" method="get">
+    <!-- Name -->
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" value="Mustafa Selçuk">
+    </div>
+    <!-- Email -->
+    <div>
+      <label for="email">Email</label><br>
+      <input type="text" name="email" id="email" placeholder="abs@saf.com">
+    </div>
+    <!-- textarea - Message -->
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <!-- select - Sex -->
+    <div>
+      <label for="sex">Sex</label><br>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- number - Age -->
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <!-- date - Birthday -->
+    <div>
+      <label for="birthday">Birthday</label><br>
+      <input type="date" name="birthday" id="birthday">
+    </div>
+    <!-- radio - membership -->
+    <div>
+      <label for="membership">Membership</label><br>
+      <input type="radio" name="membership" value="economy" id="membership"> Economy
+      <input type="radio" name="membership" value="standart" id="membership" checked> Standart
+      <input type="radio" name="membership" value="vip" id="membership"> Vip
+    </div>
+    <!-- checkbox - likes -->
+    <div>
+      <label for="likes">I Like...</label><br>
+      <input type="checkbox" name="likes" value="icecream" id="likes"> Icecream
+      <input type="checkbox" name="likes" value="baklava" id="likes" checked> Baklava
+      <input type="checkbox" name="likes" value="banana" id="likes"> Banana
+    </div>
+    <!-- Self closing button -->
+    <input type="submit" value="Submit">
+    <!-- Not self closing button -->
+    <button type="submit">Button Submit</button>
+  </form>
+
+</body>
+</html>

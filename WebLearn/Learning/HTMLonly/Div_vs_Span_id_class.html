@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div vs Span | id and class</title>
+  <style>
+    .card{
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .enhance{
+      color: yellow;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="main-header">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contract</a></li>
+  </ul>
+
+  <div id="about" class="card">
+    <h3>About</h3>
+    <!-- Span is a inline element -->
+    <p>Lorem ipsum <div class="enhance"> sit amet consectetur, adipisicing elit. </div>Laudantium dolore praesentium in fuga! Dolorum nesciunt <span class="enhance">assumenda perspiciatis voluptates sint repellat, dolore rerum accusamus doloremque</span> ea minima inventore ab reiciendis sit.</p>
+  </div>
+
+  <div id="contact"class="card">
+    <h3>Contract Me</h3>
+    <ul>
+      <li>Adress: khjklç.</li>
+      <li>Phone: 5555555555</li>
+      <li>Email: asd@bbb.com</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <!-- &copy; is entity element -->
+    <p>Copyright &copy; 2020</p>
+  </div>
+
+</body>
+</html>
